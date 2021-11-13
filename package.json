@@ -1,0 +1,25 @@
+{
+  "name": "ecommerce-mf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "run-p start:dev:home start:dev:pdp",
+    "start:dev:home": "cd home && npm run start:dev",
+    "start:dev:pdp": "cd pdp && npm run start:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarioSimou/ecommerce-mf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarioSimou/ecommerce-mf/issues"
+  },
+  "homepage": "https://github.com/MarioSimou/ecommerce-mf#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

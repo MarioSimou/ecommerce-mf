@@ -12,8 +12,16 @@
     "paths": {
       "@components/*": ["./src/components/*"],
       "@hooks": ["./src/hooks/index.ts"],
+      "@providers": ["./src/hooks/provider/index.tsx"],
       "@types": ["./src/@types/index.ts"],
       "@public/*": ["./src/public/*"]
     }                                
-  }
+  },
+  "include": [
+    "src/**/*",
+    "src/global.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
