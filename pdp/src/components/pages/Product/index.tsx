@@ -3,17 +3,27 @@ import Layout from '@components/shared/Layout'
 import { useAppProducts, useProducts} from '@hooks'
 import { useParams } from 'react-router-dom'
 import { Product as ProductT } from '@types'
-import { Flex, Box, VStack, Image, Grid, Collapse, Text, Heading, Tag, Link as ChakraLink } from '@chakra-ui/react'
+import { Flex, Box, VStack, Image, Grid, Collapse, Text, Heading, Tag, Link as ChakraLink  } from '@chakra-ui/react'
 import notFoundFallback from '@public/notFound.png'
 import Label from '@components/pages/Product/components/Label'
+import Breadcrumb, {Item} from '@components/shared/Breadcrumb'
 
 const Product: React.FC = () => {
     const { getProduct } = useProducts()
     const {getProductById, addProducts, resetProducts} = useAppProducts()
     const {id} = useParams()
-
     const product = React.useMemo(() => getProductById(id as string), [id])
-    
+    const breadcrumbItems = React.useMemo(() => {
+        if(!product){
+            return []
+        }
+
+        return [
+            {name: 'Products', href: '/products'},
+            {name: product.name, href: `/products/${product.id}`}
+        ] as Item[]
+    }, [product])
+
     React.useEffect(() => {
         if(product || !id){
             return  
@@ -32,7 +42,7 @@ const Product: React.FC = () => {
     }, [id, product])
 
     return (
-        <Layout>
+        <Layout breadcrumbItems={breadcrumbItems}>
             <VStack spacing="1rem" padding="2rem">
                 <Collapse in={!product}>
                     <Text>Product not found</Text>
@@ -58,7 +68,7 @@ const Product: React.FC = () => {
                                     <Tag colorScheme="teal" variant="outline">{product.category}</Tag>
                                 </Label>}
                                 <Label label="Tags:">
-                                    <Flex flexWrap="wrap">
+                                    <Flex flexWrap="wrap" gridGap="1rem">
                                         {product.tag_list.map(tag => {
                                             return (<Tag key={tag} variant="outline" colorScheme="teal">{tag}</Tag>)
                                         })}

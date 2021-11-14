@@ -54,6 +54,9 @@ module.exports = {
             remotes: {
                 'home': 'home@http://localhost:3000/federatedEntry.js'
             },
+            exposes: {
+                './components/Breadcrumb': './src/components/shared/Breadcrumb/index.tsx',
+            },
             shared: {
                 ...deps,
                 react: {

@@ -44,7 +44,6 @@ export const AppProductsProvider: React.FC<Props> = ({children}) => {
         const fetchProducts = async () => {
             const [e, products] = await getProducts()
 
-            console.log(products)
             if(e){
                 return console.error(e)
             }
