@@ -1,0 +1,7 @@
+{
+    "hosting": {
+      "site": "ecommerce-pdp",
+  
+      "public": "dist"
+    }
+}

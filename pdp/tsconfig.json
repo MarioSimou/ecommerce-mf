@@ -9,11 +9,13 @@
     "baseUrl": ".",
     "allowJs": true,
     "jsx": "react",
+    "resolveJsonModule": true,
     "paths": {
       "@components/*": ["./src/components/*"],
       "@hooks": ["./src/hooks/index.ts"],
       "@types": ["./src/@types/index.ts"],
-      "@public/*": ["./src/public/*"]
+      "@public/*": ["./src/public/*"],
+      "@providers": ["./src/hooks/providers/index.tsx"]
     }                                
   },
   "include": [
