@@ -6,9 +6,11 @@ import mockCategories from '../../../mock/categories.json'
 import CategoryCard from '@components/pages/Categories/components/CategoryCard'
 import Layout from '@components/shared/Layout'
 import { useAppCategories } from 'src/hooks/providers/CategoriesProvider'
+import { useNavigate } from 'react-router-dom'
 
 const Categories = () => {
     const {categories, isLoading} = useAppCategories()
+    const navigate = useNavigate()
 
     // React.useEffect(() => {
     //     const uploadCategories = async () => {
@@ -29,7 +31,8 @@ const Categories = () => {
                     <Collapse in={categories.length > 0 && !isLoading} style={{width: '100%'}}>
                         <Flex gridGap="1rem" flexWrap="wrap" justifyContent="flex-start" w="100%">
                             {categories.map(category => {
-                                return (<CategoryCard key={category.id} category={category}/>)
+                                const onClick = () => navigate(`/categories/${category.id}`)
+                                return (<CategoryCard key={category.id} onClick={onClick} category={category}/>)
                             })}
                         </Flex>
                     </Collapse>

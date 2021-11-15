@@ -56,6 +56,9 @@ module.exports = {
             exposes: {
                 './components/Header': './src/components/shared/Header/index.tsx'
             },
+            remotes: {
+                'pdp': 'pdp@http://localhost:3001/federatedEntry.js'
+            },
             shared: {
                 ...deps,
                 react: {

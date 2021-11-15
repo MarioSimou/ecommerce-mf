@@ -15,7 +15,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].js',
-        publicPath: '/'
+        // publicPath: '/'
     },
     module: {
         rules: [
@@ -52,11 +52,12 @@ module.exports = {
     plugins: [
         new ModuleFederationPlugin({
             name: "pdp",
+            filename: 'federatedEntry.js',
             remotes: {
                 'home': 'home@http://localhost:3000/federatedEntry.js'
             },
             exposes: {
-                './components/Breadcrumb': './src/components/shared/Breadcrumb/index.tsx',
+                './components/CategoryCard': './src/components/pages/Categories/components/CategoryCard.tsx',
             },
             shared: {
                 ...deps,

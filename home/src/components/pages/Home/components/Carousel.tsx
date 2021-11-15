@@ -25,7 +25,7 @@ const Carousel: React.FC<Props> = ({items}) => {
     }, [])
 
     return (
-        <Flex position="relative">
+        <Flex position="relative" height="500px" width="100%">
             {items.map((image, index) => {
                 const isSelected = selectedIndex === index
                 const loading = isSelected  ?"eager" : "lazy"
@@ -37,16 +37,16 @@ const Carousel: React.FC<Props> = ({items}) => {
                         src={imageSrc} 
                         loading={loading} 
                         boxSize="100%" 
-                        maxH="500px" 
                         objectFit="cover" 
+                        width="100%"
                         transition="left 0.3s ease-in"
                         objectPosition="center" 
-                        position="fixed" 
-                        top="72px"
+                        position="absolute" 
+                        top="0"
                         left={left}/>
                 )
             })}
-            <Flex position="absolute" top="460px" alignItems="center" gridGap="0.5rem">
+            <Flex position="absolute" bottom="2rem" left="50%" transform="translateX(-50%)" gridGap="0.5rem">
                 {items.map((item, index) => {
                     const isSelected = selectedIndex === index
                     const bg = isSelected ? "blackAlpha.500" : "blackAlpha.200"

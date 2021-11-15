@@ -1,23 +1,23 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, LinkProps } from 'react-router-dom'
 import { Category } from '@types'
-import { Box, Image, Heading, Flex}  from '@chakra-ui/react'
+import { Image, Heading, Flex}  from '@chakra-ui/react'
 import notFoundFallback from '@public/notFound.png'
+import { useNavigate } from 'react-router-dom'
 
 export type Props = {
-    category: Category
+    category: Category,
+    onClick: () => void
 }
 
-const CategoryCard: React.FC<Props> = ({category}) => {
+const CategoryCard: React.FC<Props> = ({category, onClick}) => {
     return (
-        <Link to={`/categories/${[category.id]}`}>
-            <Flex position="relative" width="250px" height="250px" borderColor="gray.200" borderWidth="1px">
-                <Image src={category.image} fallbackSrc={notFoundFallback} alt={category.name} boxSize="100%" objectFit="cover"/>
-                <Flex bg="white" position="absolute" bottom="0" left="0" width="100%" alignItems="center" justifyContent="center" padding="1rem">
-                    <Heading as="h3" fontSize="1.5rem" color="gray.700">{category.name}</Heading>
-                </Flex>
+        <Flex position="relative" width="250px" height="250px" borderColor="gray.200" borderWidth="1px" onClick={onClick}>
+            <Image src={category.image} fallbackSrc={notFoundFallback} alt={category.name} boxSize="100%" objectFit="cover"/>
+            <Flex bg="white" position="absolute" bottom="0" left="0" width="100%" alignItems="center" justifyContent="center" padding="1rem">
+                <Heading as="h3" fontSize="1.5rem" color="gray.700">{category.name}</Heading>
             </Flex>
-        </Link>
+        </Flex>
     )
 }
 

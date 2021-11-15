@@ -11,6 +11,7 @@ import {
 import Carousel from '@components/pages/Home/components/Carousel'
 import CategoryCard from 'pdp/components/CategoryCard'
 import { Category } from '@types'
+import { useNavigate } from 'react-router-dom'
 
 const carouselImages = [
     'https://www.purpicks.com/wp-content/uploads/2018/06/w3llpeople-Realist-Invisible-Setting-Powder.jpg',
@@ -40,14 +41,15 @@ const categories = [
 ]
 
 const Home = () => {
+    const navigate = useNavigate()
     // const {isLoading, categories} = useAppCategories()
     const isLoading = false
 
     return (
         <Layout>
-            <VStack spacing="2rem">
+            <VStack spacing="2rem" w="100%">
                 <Carousel items={carouselImages}/>
-                {/* <VStack p="2rem" spacing="1rem" alignItems="flex-start">
+                <VStack p="2rem" spacing="1rem" alignItems="flex-start">
                     <Heading as="h2" fontSize="1.75rem">Choose your category</Heading>
                     <VStack spacing="1rem">
                         {isLoading && <Spinner size="xl"/>}
@@ -57,12 +59,13 @@ const Home = () => {
                         <Collapse in={categories.length > 0 && !isLoading} style={{width: '100%'}}>
                             <Flex gridGap="1rem" flexWrap="wrap" justifyContent="flex-start" w="100%">
                                 {(categories as Category[]).map(category => {
-                                    return (<CategoryCard key={category.id} category={category}/>)
+                                    const onClick = () => window.location.href = `http://localhost:3001/categories`
+                                    return (<CategoryCard to="#" key={category.id} category={category} onClick={onClick}/>)
                                 })}
                             </Flex>
                         </Collapse>
                     </VStack>
-                </VStack> */}
+                </VStack>
             </VStack>
         </Layout>
     )
