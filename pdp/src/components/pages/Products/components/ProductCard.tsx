@@ -1,16 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Product } from '@types'
+import { Category, Product } from '@types'
 import { Grid, Box, Image, Heading, VStack, Flex, Text, Tag}  from '@chakra-ui/react'
 import notFoundFallback from '@public/notFound.png'
 
 export type Props = {
     product: Product
+    category: Category
 }
 
-const ProductCard: React.FC<Props> = ({product}) => {
+const ProductCard: React.FC<Props> = ({product, category}) => {
     return (
-        <Link to={`/products/${[product.id]}`}>
+        <Link to={`/categories/${category.id}/${[product.id]}`}>
                                 <Grid gridAutoFlow="row" gridTemplateRows="150px 1fr" key={product.id} borderColor="gray.200" borderWidth="1px">
                                     <Box w="100%">
                                         <Image src={product.image_link} fallbackSrc={notFoundFallback} alt={product.name} boxSize="100%" objectFit="cover"/>

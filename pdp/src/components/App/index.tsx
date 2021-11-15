@@ -1,10 +1,13 @@
+import regeneratorRuntime from "regenerator-runtime";
 import React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
-import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import { Routes, Route, BrowserRouter, Outlet } from 'react-router-dom'
 import Products from '@components/pages/Products'
 import Product from '@components/pages/Product'
+import Categories from '@components/pages/Categories'
 import { FirebaseOptions, getApp, initializeApp } from 'firebase/app'
 import { AppProductsProvider  } from '@providers'
+import AppCategoriesProvider from 'src/hooks/providers/CategoriesProvider'
 
 export const APP_NAME = 'pdp'
 
@@ -21,17 +24,21 @@ initializeApp(firebaseConfig, APP_NAME)
 
 export const getFirebaseApp = () => getApp(APP_NAME)
 
+
 const App = () => {
     return (
         <ChakraProvider>
-            <AppProductsProvider>
-                <BrowserRouter>
-                    <Routes>
-                        <Route path="/products" element={<Products/>}/>
-                        <Route path="/products/:id" element={<Product/>}/>
-                    </Routes>
-                </BrowserRouter>
-            </AppProductsProvider>
+            <AppCategoriesProvider>
+                <AppProductsProvider>
+                    <BrowserRouter>
+                        <Routes>
+                            <Route path="/categories" element={<Categories/>}/>
+                            <Route path="/categories/:categoryId" element={<Products/>}/>
+                            <Route path="/categories/:categoryId/:productId" element={<Product/>}/>
+                        </Routes>
+                    </BrowserRouter>
+                </AppProductsProvider>
+            </AppCategoriesProvider>
         </ChakraProvider>
     )
 }

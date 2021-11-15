@@ -6,10 +6,10 @@ import Breadcrumb, { Item } from '@components/shared/Breadcrumb'
 
 export type Props = {
     children: React.ReactElement
-    breadcrumbItems: Item[]
+    breadcrumbItems?: Item[]
 }
 
-const Layout: React.FC<Props> = ({children, breadcrumbItems}) => {
+const Layout: React.FC<Props> = ({children, breadcrumbItems = []}) => {
     const onClickHome = () => window.location.href = 'http://localhost:3000/'
     const onClickSignIn = () => window.location.href = 'http://localhost:3000/sign-in'
 
@@ -18,7 +18,7 @@ const Layout: React.FC<Props> = ({children, breadcrumbItems}) => {
             <ErrorBoundary fallback={<Spinner/>}>
                 <Header onClickHome={onClickHome} onClickSignIn={onClickSignIn}/>
             </ErrorBoundary>
-            <Breadcrumb items={breadcrumbItems}/>
+            {breadcrumbItems.length > 0 && <Breadcrumb items={breadcrumbItems}/>}
             {children}
         </Flex>
     )

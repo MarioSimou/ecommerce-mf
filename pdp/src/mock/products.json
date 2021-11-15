@@ -1,0 +1,486 @@
+[
+  {
+    "id": 1038,
+    "brand": "sally b's skin yummies",
+    "name": "B Smudged",
+    "price": "0.0",
+    "price_sign": "$",
+    "currency": "USD",
+    "image_link": "https://www.purpicks.com/wp-content/uploads/2018/06/Sally-B_s-Skin-Yummies-B-Smudged-1.jpg",
+    "product_link": "https://www.purpicks.com/product/sally-bs-skin-yummies-b-smudged/",
+    "website_link": "https://purpicks.com/",
+    "description": "Let your eyes naturally pop with our B Smudged, a subtle eye color that adds a tint of color to the base of your lashes. An organic, cream eye color, B Smudged eliminates the inevitable uneven line from traditional eyeliners, and does not require expert blending techniques of messy, powder-based shadows. Simply 'smudge' along lash line for color that stays in place for a long lasting look.",
+    "rating": null,
+    "category": 1,
+    "product_type": "eyeshadow",
+    "tag_list": [
+      "EWG Verified",
+      "purpicks"
+    ],
+    "created_at": "2018-06-30T19:19:32.132Z",
+    "updated_at": "2018-09-02T22:52:06.697Z",
+    "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1038.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/038/original/open-uri20180630-4-xhqdne?1530390385",
+    "product_colors": [
+      {
+        "hex_value": "#485376",
+        "colour_name": "B smudged"
+      }
+    ]
+  },
+  {
+    "id": 1037,
+    "brand": "sally b's skin yummies",
+    "name": "B Glossy Lip Gloss",
+    "price": "0.0",
+    "price_sign": "$",
+    "currency": "USD",
+    "image_link": "https://www.purpicks.com/wp-content/uploads/2018/06/Sally-B_s-Skin-Yummies-B-Glossy-Lip-Gloss.jpg",
+    "product_link": "https://www.purpicks.com/product/sally-bs-skin-yummies-b-glossy-lip-gloss/",
+    "website_link": "https://purpicks.com/",
+    "description": "Intensify your natural lip color with Sally B's B Glossy Lip Gloss, an organic lip gloss that adds a silky smooth hint of color and shimmer to lips. Formulated with 98% certified organic, moisture-rich ingredients our B Glossy Lip Gloss works to enrich lip health for lips that feel good and look even better.",
+    "rating": null,
+    "category": 1,
+    "product_type": "lipstick",
+    "tag_list": [
+      "EWG Verified",
+      "purpicks"
+    ],
+    "created_at": "2018-06-30T19:19:32.053Z",
+    "updated_at": "2018-09-02T22:52:06.687Z",
+    "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1037.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/037/original/open-uri20180630-4-1fa1p2f?1530390384",
+    "product_colors": [
+      {
+        "hex_value": "#BF5D7F",
+        "colour_name": "Every Blonde's Pink"
+      },
+      {
+        "hex_value": "#D84945",
+        "colour_name": "Primrose"
+      },
+      {
+        "hex_value": "#E1A2A0",
+        "colour_name": "Soft Kiss"
+      },
+      {
+        "hex_value": "#B82F42",
+        "colour_name": "Ruby's Red"
+      },
+      {
+        "hex_value": "#BE5F37",
+        "colour_name": "Copper Penny"
+      },
+      {
+        "hex_value": "#8F4636",
+        "colour_name": "Sweet Plum"
+      }
+    ]
+  },
+  {
+    "id": 1036,
+    "brand": "rejuva minerals",
+    "name": "Multi Purpose Powder - Blush & Eye",
+    "price": "0.0",
+    "price_sign": "$",
+    "currency": "USD",
+    "image_link": "https://www.purpicks.com/wp-content/uploads/2018/06/Rejuva-Minerals-Multi-Purpose-Powder-Blush-_-Eye-1.jpg",
+    "product_link": "https://www.purpicks.com/product/rejuva-minerals-multi-purpose-powder-blush-eye/",
+    "website_link": "https://purpicks.com/",
+    "description": "Our Multi Purpose Pressed Powders may be used for blush or eye shadow. Blended with antioxidants from Certified Organic Fruits, Berries &amp; Botanicals*. Made without any gluten containing ingredients. Mica free Pink Parfait and Papaya will offer a natural, ultra sheer semi-matte finish. The petals from beautiful crushed red roses that are found in Pink Parfait, are valued for their natural color and delightful aroma that they provide! Acai Berry will offer a natural, ultra sheer satin finish (mica added). VEGAN. Image one is Pink Parfait. Image two is Papaya, and image three is Acai Berry. Model in image four is wearing Papaya. Model in image five is wearing Acai Berry. To see a demonstration of Papaya, click on the video and fast forward to 3:44. Enjoy! This product is EWG VERIFIED&#x2122; and rated 'CLEAN'in the Think Dirty app! BPA and Phthalate free packaging. Plastic parts of compacts are recyclable. *Tiny flecks of fruit and botanical particles may be visible in powder. Pink Parfait and Papaya are Titanium Dioxide and Mica free. Net Weight: 2.8 gm.",
+    "rating": null,
+    "category": 2,
+    "product_type": "eyeshadow",
+    "tag_list": [
+      "purpicks",
+      "EWG Verified",
+      "Hypoallergenic",
+      "No Talc"
+    ],
+    "created_at": "2018-06-30T19:19:31.988Z",
+    "updated_at": "2018-09-02T22:52:06.678Z",
+    "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1036.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/036/original/open-uri20180630-4-ign3hh?1530390384",
+    "product_colors": [
+      {
+        "hex_value": "#E1BFC0",
+        "colour_name": "Pink Parfait"
+      },
+      {
+        "hex_value": "#D7A7A3",
+        "colour_name": "Papaya"
+      },
+      {
+        "hex_value": "#E6C3CB",
+        "colour_name": "Acai Berry"
+      }
+    ]
+  },
+  {
+    "id": 1035,
+    "brand": "rejuva minerals",
+    "name": "Multi Purpose Powder - Blush & Eye",
+    "price": "0.0",
+    "price_sign": "$",
+    "currency": "USD",
+    "image_link": "https://www.purpicks.com/wp-content/uploads/2018/06/Rejuva-Minerals-Multi-Purpose-Powder-Blush-_-Eye-1.jpg",
+    "product_link": "https://www.purpicks.com/product/rejuva-minerals-multi-purpose-powder-blush-eye/",
+    "website_link": "https://purpicks.com/",
+    "description": "Our Multi Purpose Pressed Powders may be used for blush or eye shadow. Blended with antioxidants from Certified Organic Fruits, Berries &amp; Botanicals*. Made without any gluten containing ingredients. Mica free Pink Parfait and Papaya will offer a natural, ultra sheer semi-matte finish. The petals from beautiful crushed red roses that are found in Pink Parfait, are valued for their natural color and delightful aroma that they provide! Acai Berry will offer a natural, ultra sheer satin finish (mica added). VEGAN. Image one is Pink Parfait. Image two is Papaya, and image three is Acai Berry. Model in image four is wearing Papaya. Model in image five is wearing Acai Berry. To see a demonstration of Papaya, click on the video and fast forward to 3:44. Enjoy! This product is EWG VERIFIED&#x2122; and rated 'CLEAN'in the Think Dirty app! BPA and Phthalate free packaging. Plastic parts of compacts are recyclable. *Tiny flecks of fruit and botanical particles may be visible in powder. Pink Parfait and Papaya are Titanium Dioxide and Mica free. Net Weight: 2.8 gm.",
+    "rating": null,
+    "category": 2,
+    "product_type": "blush",
+    "tag_list": [
+      "purpicks",
+      "EWG Verified",
+      "Hypoallergenic",
+      "No Talc"
+    ],
+    "created_at": "2018-06-30T19:19:31.909Z",
+    "updated_at": "2018-09-02T22:52:06.855Z",
+    "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1035.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/035/original/open-uri20180630-4-n6wb0y?1530390383",
+    "product_colors": [
+      {
+        "hex_value": "#E1BFC0",
+        "colour_name": "Pink Parfait"
+      },
+      {
+        "hex_value": "#D7A7A3",
+        "colour_name": "Papaya"
+      },
+      {
+        "hex_value": "#E6C3CB",
+        "colour_name": "Acai Berry"
+      }
+    ]
+  },
+  {
+    "id": 1034,
+    "brand": "rejuva minerals",
+    "name": "Multi Purpose Powder - Eye Shadow & Face",
+    "price": "0.0",
+    "price_sign": "$",
+    "currency": "USD",
+    "image_link": "https://www.purpicks.com/wp-content/uploads/2018/06/Rejuva-Minerals-Multi-Purpose-Powder-Eye-Shadow-Face-1.jpg",
+    "product_link": "https://www.purpicks.com/product/rejuva-minerals-multi-purpose-powder-eye-shadow-face/",
+    "website_link": "https://purpicks.com/",
+    "description": "Our Multi Purpose Pressed Powders may be used as eye shadow, brow powder, eye liner, or for highlighting. Blended with antioxidants from Certified Organic Fruits, Berries &amp; Botanicals*. No gluten derived ingredients. VEGAN. All shades will offer a semi-matte finish, with the exception of White Diamond. White Diamond will offer a shimmery finish. Image one shows shade in Iris. This product is EWG VERIFIED&#x2122; and rated 'CLEAN' in the Think Dirty app! BPA and Phthalate free packaging. Plastic parts of compacts are recyclable.",
+    "rating": null,
+    "category": 2,
+    "product_type": "eyeshadow",
+    "tag_list": [
+      "purpicks",
+      "EWG Verified",
+      "Vegan",
+      "Organic"
+    ],
+    "created_at": "2018-06-30T19:19:31.827Z",
+    "updated_at": "2018-09-02T22:52:06.661Z",
+    "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1034.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/034/original/open-uri20180630-4-1n63e1y?1530390382",
+    "product_colors": [
+      {
+        "hex_value": "#F7F8F3",
+        "colour_name": "White Diamond"
+      },
+      {
+        "hex_value": "#E8B49B",
+        "colour_name": "Tropical Sunset"
+      },
+      {
+        "hex_value": "#292627",
+        "colour_name": "Moonless Night"
+      },
+      {
+        "hex_value": "#A17E69",
+        "colour_name": "Mocha Latte"
+      },
+      {
+        "hex_value": "#8C666E",
+        "colour_name": "Iris"
+      },
+      {
+        "hex_value": "#615349",
+        "colour_name": "Brazillian Brown"
+      },
+      {
+        "hex_value": "#F7DEC4",
+        "colour_name": "Beach Bum"
+      }
+    ]
+  },
+  {
+    "id": 1033,
+    "brand": "rejuva minerals",
+    "name": "Pressed Powder Foundation",
+    "price": "0.0",
+    "price_sign": "$",
+    "currency": "USD",
+    "image_link": "https://www.purpicks.com/wp-content/uploads/2018/06/Rejuva-Minerals-Multi-Purpose-Powder-Eye-Shadow-Face-1.jpg",
+    "product_link": "https://www.purpicks.com/product/rejuva-minerals-multi-purpose-powder-eye-shadow-face/",
+    "website_link": "https://purpicks.com/",
+    "description": "Coconut Cream - Warm Undertones (yellow) Light Shade. May also be used as a highlighting shade! About our pressed foundations:<ul><li>Provides a silky smooth, natural 'semi-matte' finish</li><li>All skin types</li><li>Will not dry out skin (apply light moisturizer underneath for best results)</li><li>Resists caking and settling in lines and pores</li><li>Layers to provide a light-medium (buildable) coverage</li><li>Eco-friendly, biodegradable compact</li><li>Colored with minerals and enhanced with organic fruits and botanicals</li><li>Infused with conditioning organic jojoba oil</li><li>Formulated without common skin irritants.</li></ul>",
+    "rating": null,
+    "category": 2,
+    "product_type": "foundation",
+    "tag_list": [
+      "purpicks",
+      "EWG Verified",
+      "Hypoallergenic",
+      "No Talc"
+    ],
+    "created_at": "2018-06-30T19:19:31.736Z",
+    "updated_at": "2018-09-02T22:52:06.652Z",
+    "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1033.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/033/original/open-uri20180630-4-1mibdm?1530390382",
+    "product_colors": [
+      {
+        "hex_value": "#FBE9CD",
+        "colour_name": "Coconut Cream"
+      },
+      {
+        "hex_value": "#E6B588",
+        "colour_name": "Dune"
+      },
+      {
+        "hex_value": "#EBC8A0",
+        "colour_name": "Glow"
+      },
+      {
+        "hex_value": "#F8E3D5",
+        "colour_name": "Nude"
+      },
+      {
+        "hex_value": "#D8B39B",
+        "colour_name": "Radiance"
+      },
+      {
+        "hex_value": "#E7CDBA",
+        "colour_name": "Sand"
+      },
+      {
+        "hex_value": "#F1C4A8",
+        "colour_name": "Sea Shell"
+      },
+      {
+        "hex_value": "#D1B594",
+        "colour_name": "Taffy"
+      },
+      {
+        "hex_value": "#9C7248",
+        "colour_name": "Bahama Mama"
+      },
+      {
+        "hex_value": "#DDA983",
+        "colour_name": "St Tropez"
+      }
+    ]
+  },
+  {
+    "id": 1032,
+    "brand": "rejuva minerals",
+    "name": "Bronzer - loose",
+    "price": "0.0",
+    "price_sign": "$",
+    "currency": "USD",
+    "image_link": "https://www.purpicks.com/wp-content/uploads/2018/03/rejuva-minerals-bronzer.jpg",
+    "product_link": "https://www.purpicks.com/product/rejuva-minerals-bronzer-caribbean/",
+    "website_link": "https://purpicks.com/",
+    "description": "Caribbean is a multi-purpose shade that is suitable for medium-tan skin tones. This shade may be used as a bronzer, or as a contour shade. <ul><li>Our bronzer has been enhanced with Fruits, Botanicals and Clays for their natural color, fragrance and antioxidant benefits!</li><li>Blended with Certified Organics Fruits and Botanicals</li><li>Formulated with common skin irritants.</li><li>Our bronzer will offer a natural “ultra sheer” semi-matte finish.</li><li>Made without any gluten containing ingredients</li><li>VEGAN!</li><li>Eco Friendly jars!</li></ul>",
+    "rating": null,
+    "category": 2,
+    "product_type": "bronzer",
+    "tag_list": [
+      "purpicks",
+      "EWG Verified",
+      "Vegan",
+      "Gluten Free"
+    ],
+    "created_at": "2018-06-30T19:19:31.682Z",
+    "updated_at": "2018-09-02T22:52:06.643Z",
+    "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1032.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/032/original/open-uri20180630-4-1bl3btv?1530390381",
+    "product_colors": [
+      {
+        "hex_value": "#A37948",
+        "colour_name": "Caribbean"
+      }
+    ]
+  },
+  {
+    "id": 1031,
+    "brand": "rejuva minerals",
+    "name": "Bronzer - pressed",
+    "price": "0.0",
+    "price_sign": "$",
+    "currency": "USD",
+    "image_link": "https://www.purpicks.com/wp-content/uploads/2018/03/rejuva-minerals-bronzer.jpg",
+    "product_link": "https://www.purpicks.com/product/rejuva-bronzer-light/",
+    "website_link": "https://purpicks.com/",
+    "description": "Our bronzer has been enhanced with Fruits, Botanicals and Clays for their natural color, fragrance and antioxidant benefits! Blended with Certified Organics Fruits and Botanicals Formulated with common skin irritants. Our bronzer will offer a natural 'ultra sheer' semi-matte finish. Made without any gluten containing ingredients VEGAN! Eco Friendly jars!",
+    "rating": null,
+    "category": 2,
+    "product_type": "bronzer",
+    "tag_list": [
+      "purpicks",
+      "EWG Verified",
+      "Vegan",
+      "Gluten Free"
+    ],
+    "created_at": "2018-06-30T19:19:31.624Z",
+    "updated_at": "2018-09-02T22:52:06.629Z",
+    "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1031.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/031/original/open-uri20180630-4-1axfay6?1530390380",
+    "product_colors": [
+      {
+        "hex_value": "#DDA983",
+        "colour_name": "St Tropez"
+      },
+      {
+        "hex_value": "#9C7248",
+        "colour_name": "Bahama Mama"
+      }
+    ]
+  },
+  {
+    "id": 1030,
+    "brand": "penny lane organics",
+    "name": "Lip Gloss",
+    "price": "0.0",
+    "price_sign": "$",
+    "currency": "USD",
+    "image_link": "https://www.purpicks.com/wp-content/uploads/csm/sunset-bronze-pennylaneorganics1.jpg",
+    "product_link": "https://www.purpicks.com/product/penny-lane-organics-lip-gloss/",
+    "website_link": "https://purpicks.com/",
+    "description": "For fuller healthier lips! Long lasting colour! This colour is a good choice for any skin tone. It can be made lighter by wiping some off after application.Please note that our Vitamin E is extracted from non-GMO soy bean oil and therefore is gluten-free.",
+    "rating": null,
+    "category": 1,
+    "product_type": "lipstick",
+    "tag_list": [
+      "purpicks",
+      "CertClean",
+      "Vegan",
+      "Chemical Free",
+      "Gluten Free"
+    ],
+    "created_at": "2018-06-30T19:19:31.534Z",
+    "updated_at": "2018-09-02T22:52:06.618Z",
+    "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1030.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/030/original/open-uri20180630-4-ucbwbt?1530390380",
+    "product_colors": [
+      {
+        "hex_value": "#2F1513",
+        "colour_name": "Black Cherry"
+      },
+      {
+        "hex_value": "#4F1314",
+        "colour_name": "Fiery Red"
+      },
+      {
+        "hex_value": "#6F2633",
+        "colour_name": "Pearl Pink"
+      },
+      {
+        "hex_value": "#B05665",
+        "colour_name": "Pink Shimmer"
+      },
+      {
+        "hex_value": "#783F30",
+        "colour_name": "Sunset Bronze"
+      },
+      {
+        "hex_value": "#511617",
+        "colour_name": "Sweet Cherry"
+      },
+      {
+        "hex_value": "#8E2432",
+        "colour_name": "Tropical Fuschia"
+      }
+    ]
+  },
+  {
+    "id": 1029,
+    "brand": "nudus",
+    "name": "Amalia",
+    "price": "0.0",
+    "price_sign": "$",
+    "currency": "USD",
+    "image_link": "https://www.purpicks.com/wp-content/uploads/2018/06/Nudus-Amalia.jpg",
+    "product_link": "https://www.purpicks.com/product/nudus-amalia/",
+    "website_link": "https://purpicks.com/",
+    "description": "named after my beautiful mum, delicately pink that displays sophistication. a perfect sheer wash of gorgeous colour that brings a new texture to the lip euphoria range. <strong>lipstick benefits</strong> a unique handcrafted lipstick blended with certified organic ingredients. beautifully pigmented with ancient ayurvedic bioactive colour extracts, leaving your lips soft and deliciously hydrated.<strong>key benefits</strong><ul><li>vitamins, A, B, C, D, E and K</li><li>antioxidants, including pomegranate, raspberry and kiwi cold pressed oils</li><li>27 active natural ingredients, helping against environmental stress</li><li>colours made from flowers, fruits, herbs and minerals</li><li>free from parabens, petro-chemicals, lanolin, hydrogenated oils,fd&amp;c and lake dyes, nano-particles, gmo, pesticides and fungicides</li><li>not tested on animals</li><li>gluten free</li></ul>",
+    "rating": null,
+    "category": 3,
+    "product_type": "lipstick",
+    "tag_list": [
+      "purpicks"
+    ],
+    "created_at": "2018-06-30T19:19:31.441Z",
+    "updated_at": "2018-09-02T22:52:06.839Z",
+    "product_api_url": "http://makeup-api.herokuapp.com/api/v1/products/1029.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/029/original/open-uri20180630-4-1rfkucb?1530390379",
+    "product_colors": [
+      {
+        "hex_value": "#7C524F",
+        "colour_name": "27 Kisses"
+      },
+      {
+        "hex_value": "#884955",
+        "colour_name": "Amalia"
+      },
+      {
+        "hex_value": "#9F3D2A",
+        "colour_name": "Bitter Sweet"
+      },
+      {
+        "hex_value": "#542A26",
+        "colour_name": "Dirty Diana"
+      },
+      {
+        "hex_value": "#793D48",
+        "colour_name": "Dreamtime"
+      },
+      {
+        "hex_value": "#BB6E60",
+        "colour_name": "Fairy Tale"
+      },
+      {
+        "hex_value": "#BA8285",
+        "colour_name": "Halo"
+      },
+      {
+        "hex_value": "#71474E",
+        "colour_name": "Just Like Jade"
+      },
+      {
+        "hex_value": "#AF8475",
+        "colour_name": "Naked"
+      },
+      {
+        "hex_value": "#D65572",
+        "colour_name": "Precious"
+      },
+      {
+        "hex_value": "#8F1A23",
+        "colour_name": "Revenge"
+      },
+      {
+        "hex_value": "#8B383D",
+        "colour_name": "Ruby Rose"
+      },
+      {
+        "hex_value": "#C83752",
+        "colour_name": "Survivor"
+      },
+      {
+        "hex_value": "#784F5F",
+        "colour_name": "Viva"
+      },
+      {
+        "hex_value": "#672F57",
+        "colour_name": "Zo Zo"
+      }
+    ]
+  }
+]

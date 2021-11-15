@@ -9,12 +9,18 @@ export type Product = {
     product_link: string
     website_link: string
     description: string
-    racing: string | null
-    category: string
+    rating: string | null
+    category: number
     product_type: string
     tag_list: string[]
     created_at: string
     updated_at: string
-    producT_api_url: string
+    product_api_url: string
     api_featured_image: string
+}
+
+export type Category = {
+    id: number
+    name: string
+    image: string
 }

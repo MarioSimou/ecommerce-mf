@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Lip Gloss",
+        "image": "https://www.purpicks.com/wp-content/uploads/csm/sunset-bronze-pennylaneorganics1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Powder",
+        "image": "https://www.purpicks.com/wp-content/uploads/2018/03/rejuva-minerals-bronzer.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Lipstick",
+        "image": "https://www.purpicks.com/wp-content/uploads/2018/06/Nudus-Amalia.jpg"
+    }
+]

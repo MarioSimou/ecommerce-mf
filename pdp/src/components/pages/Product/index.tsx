@@ -1,45 +1,45 @@
 import React from 'react'
 import Layout from '@components/shared/Layout'
-import { useAppProducts, useProducts} from '@hooks'
+import { useAppProducts, useProducts, useAppCategories} from '@hooks'
 import { useParams } from 'react-router-dom'
-import { Product as ProductT } from '@types'
+import { Product as ProductT, Category } from '@types'
 import { Flex, Box, VStack, Image, Grid, Collapse, Text, Heading, Tag, Link as ChakraLink  } from '@chakra-ui/react'
 import notFoundFallback from '@public/notFound.png'
 import Label from '@components/pages/Product/components/Label'
 import Breadcrumb, {Item} from '@components/shared/Breadcrumb'
 
 const Product: React.FC = () => {
+    const { categories } = useAppCategories()
     const { getProduct } = useProducts()
     const {getProductById, addProducts, resetProducts} = useAppProducts()
-    const {id} = useParams()
-    const product = React.useMemo(() => getProductById(id as string), [id])
+    const {productId, categoryId} = useParams()
+
+    const category = React.useMemo((): Category | undefined => {
+        if(!categoryId){
+            return undefined
+        }
+
+        return categories.find(category => category.id === parseInt(categoryId)) as Category
+    }, [categories])
+
+    const product = React.useMemo(() => {
+        if(!productId){
+            return undefined
+        }
+        return getProductById(productId)
+    }, [productId])
+
     const breadcrumbItems = React.useMemo(() => {
         if(!product){
             return []
         }
 
         return [
-            {name: 'Products', href: '/products'},
-            {name: product.name, href: `/products/${product.id}`}
+            {name: 'Categories', href: '/categories'},
+            {name: category?.name, href: `/categories/${category?.id}`},
+            {name: product.name, href: `/categories/${category?.id}/${product.id}`},
         ] as Item[]
     }, [product])
-
-    React.useEffect(() => {
-        if(product || !id){
-            return  
-        }
-
-        const fetchProduct = async () => {
-            const [e, product] = await getProduct(id)
-
-            if(e){
-                return
-            }
-            addProducts(product as ProductT) 
-        }
-
-        fetchProduct()
-    }, [id, product])
 
     return (
         <Layout breadcrumbItems={breadcrumbItems}>
@@ -48,7 +48,7 @@ const Product: React.FC = () => {
                     <Text>Product not found</Text>
                 </Collapse>
                 <Collapse in={Boolean(product)}>
-                    {product && <Grid gridGap="2rem" gridTemplateColumns={["1fr", "1fr", "300px 1fr", "300px 1fr"]}>
+                    {product && category && <Grid gridGap="2rem" gridTemplateColumns={["1fr", "1fr", "300px 1fr", "300px 1fr"]}>
                         <Box>
                             <Image src={product.image_link} fallbackSrc={notFoundFallback} alt={product.name}  />
                         </Box>

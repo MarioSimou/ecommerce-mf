@@ -14,7 +14,8 @@ module.exports = {
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].js'
+        filename: '[name].js',
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -67,18 +68,6 @@ module.exports = {
                     requiredVersion: deps['react-dom'],
                     singleton: true,
                 },
-                '@emotion/react': {
-                    requiredVersion: deps['@emotion/react'],
-                    singleton: true,
-                },
-                '@emotion/styled': {
-                    requiredVersion: deps['@emotion/styled'],
-                    singleton: true,
-                },
-                'framer-motion': {
-                    requiredVersion: deps['framer-motion'],
-                    singleton: true,
-                }
             }
         }),
         new HTMLWebpackPlugin({

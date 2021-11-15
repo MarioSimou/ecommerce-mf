@@ -21,11 +21,11 @@ export const useAppProducts = () => {
     return productsContext
 }
 
-export type Props = {
+export type AppProductsProviderProps = {
     children: React.ReactElement
 }
 
-export const AppProductsProvider: React.FC<Props> = ({children}) => {
+export const AppProductsProvider: React.FC<AppProductsProviderProps> = ({children}) => {
     const [products, setProducts] = React.useState<Product[]>([])
     const [isLoading, setIsLoading] = React.useState<boolean>(true)
     const {getProducts} = useProducts()
